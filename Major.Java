@@ -1,4 +1,4 @@
-public class Major extends Students {
+public class Major extends Student {
 
     private String majorName;
     private double gpa;
@@ -6,7 +6,7 @@ public class Major extends Students {
     public Major(String name, int age, String hometown, String majorName, double gpa) {
         super(name, age, hometown);
         this.majorName = majorName;
-        this.gpa = gpa;
+          setGpa(gpa);         
     }
 
     public String getMajorName() {
