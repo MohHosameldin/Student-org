@@ -21,7 +21,12 @@ public class Major extends Students {
         return gpa;
     }
     public void setGpa(double gpa) {
-        this.gpa = gpa;
+        if (gpa < 0.0 || gpa > 4.0) {
+            throw new IllegalArgumentException("GPA must be between 0.0 and 4.0");
+        }
+        else {
+            this.gpa = gpa;
+        }
     }
     @Override
     public String toString() {
