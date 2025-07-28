@@ -3,7 +3,7 @@ public class Student {
     private String name;
     private int age;
     private int studentId;
-    private static int idCounter = 25000000;
+    private static int idCounter = 25000001;
     private String hometown;
 
 
